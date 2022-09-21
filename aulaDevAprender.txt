@@ -22,8 +22,48 @@ precisa usar os comandos:
 13.criando um repositorio no github sempre utilize a opção de criar um arquivo README para dar instruções de como utilizar seu repositorio.
 14.após criar o repositorio, copie o link do mesmo e use o comendo no git- git remoteadd origin "url do github" 
 14.agora para de fato enviar os arquivos para o github deve usar o cod- git push
-15. o passo 14 da erro pois voce nao definiu uma branche para fazer o upload
+15. o passo 14 da erro pois voce nao definiu uma branch para fazer o upload
 16.inicialmente envimos para a master com o cod- git push --set-upstream origin master
 17.logar com o browser e dar permissao
 18.e finalmente depois de todos esses passos voce finalmente conseguiu subir a primeira versao dos seus codigos/arquivos para o github na branche master!!!!!
+19.para adicionar novas atualizações é necessario:
+	atulizar ou adicionar arquivos na pasta
+	git status para verificar se temos arquivos salvar
+	git commit -m "usar commits que façam logica no processo"
+	git push para subir as atualizações
+--Avançado
+20.Para ver os historicos das atualizações cod- git reflog
+21.para voltar a versões anteriores dos arquivos localmente:
+	pegar o id da atualização
+	cod- git reset --hard *id da atualização*
+22.para voltar é o mesmo processo, verifica a atualização e usa o mesmo comando para voltar a desejada
+23.***LEMBRANDO QUE TUDO ISSO É LOCALMENTE***
+24.não faça isso sem supervisão ou se estiver fazendo o projeto sozinho faça apenas se precisar realmente.
+25.branch(galho em ingles)- cominhos diferentes que serão percorridos para armazenar versões do codigo
+26.branch master é a principal
+27.atualizações devem ser feitas e especificadas com mensagens no commit para melhor desenvolvimento do processo
+28.normalmente só uma branch é necessaria para usar no trabalho pessoal
+29. durante o trabalho é ideal utilizar a branch principal apenas para codigos funcionais e branches paralelas "branches a,b,c" para continuar o trabalho e sempre ir salvando 
+30.apenas quando houver certeza que esta tudo funcionando com o codigo que se deve passar para a branch master com um comando "merge"
+31.cod- git branch (mostra quais são as branches disponiveis)
+32.cod- git branch staging (para criar uma nova branch)
+pode ser usado varios nomes, ideal que seja staging ou o nome da atualização/funcionalidade que esta sendo implementada
+33.a branch que estamos trabalhando atualmente aparece no "git branch" em verde e com um *
+34.para alterar a branch utilizada no momento deve usar o cod- git checkout staging
+35.toda vez que uma nova branch é criada deve se usar o comando 
+git push --set-upstream origin staging (que no caso é o nome da branch)
+36. após isso é possivel usar o comando git push normalmente
+37. após isso todos os arquivos na pasta são enviados para a nuvem.
+38.para unir as branches:
+entrar na branch que esta recebendo as atualizações 
+	git checkout *branch principal*
+usar o comando para unir os arquivos, ele verifica quais foram os arquivo alterados e faz o processo de atualização
+	git merge *branch que vai puxar as atualizações*
+	git push para finalizar e subir a atualização
+39.antes de fazer o merge precisa puxar as autorizações do servidor pra ter certeza que esta atualizando na mais recente
+40.antes do merge use o cod- git pull (na branch principal) 
+
+
+
+
 
