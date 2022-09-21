@@ -63,6 +63,10 @@ usar o comando para unir os arquivos, ele verifica quais foram os arquivo altera
 39.antes de fazer o merge precisa puxar as autorizações do servidor pra ter certeza que esta atualizando na mais recente
 40.antes do merge use o cod- git pull (na branch principal) 
 
+41.pull request- solicitação de verificação do codigo por outro dev
+42- pull request é feito no site do github quando voce faz qualquer commit nos arquivos ele gera uma aba de "compare & pull request"
+43 selecione a base que voce deseja colocar o seu commit e deixe um comentario explicando melhor o que vc fez
+43 create pull request and wait approval
 
 
 
