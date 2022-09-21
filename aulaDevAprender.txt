@@ -1,0 +1,29 @@
+AULA- GIT/GITHUB 
+
+1. Instalar a versão do Git mais recente e criar uma conta no git hub.
+2. Criar pasta;
+	Botão direito;
+	Git Bash Here;
+	cod- git init.
+3.colocar os codigos necessarios
+	verificar se o repositorio esta ou não atualizado: cod - git status
+4.No commits yet = Não existem outras versões do codigo.
+5.Untracked files = arquivos não foram incluidos no controle de versão
+6.Caso precise incluir arquivos manualmente deve usar o cod- git add "arquivo.extensao" e enter para rodar, depois usando o "git status" pode verificar se realmente foi
+7.Para adicionar todos os arquivos ao git pode se usar o cod- git add .
+8. o comando commit é usado para confirmar a versão cod- git commit -m "versão atualizada".
+9. caso voce nao tenha configurado a sua conta do github, rodando o codigo no item 8, o git vai apresentar um erro pedindo para realizar a configuração.
+precisa usar os comandos:
+	git config --global user.email "seu email"
+	git config --global user.name "seu nome", quando der upload nos arquivos o git vai informar esse nome na versão.
+10.após o item 9 voce pode usar o comando de git commit -m "versão atualizada" (caso seja a primeira versão deve se usar a msg "commit inicial")
+11.para enviar os codigos para a nuvem é necessario usar o cod- git push
+12.no passo 11 apresentara um erro pois o git nao sabe para onde deve enviar os arquivos, é necessario criar um repositorio no github antes.
+13.criando um repositorio no github sempre utilize a opção de criar um arquivo README para dar instruções de como utilizar seu repositorio.
+14.após criar o repositorio, copie o link do mesmo e use o comendo no git- git remoteadd origin "url do github" 
+14.agora para de fato enviar os arquivos para o github deve usar o cod- git push
+15. o passo 14 da erro pois voce nao definiu uma branche para fazer o upload
+16.inicialmente envimos para a master com o cod- git push --set-upstream origin master
+17.logar com o browser e dar permissao
+18.e finalmente depois de todos esses passos voce finalmente conseguiu subir a primeira versao dos seus codigos/arquivos para o github na branche master!!!!!
+
